@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: fall_detection_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./datasets:/app/datasets
+      - ./runs:/app/runs
+      - ./models:/app/models
+    environment:
+      - DATABASE_URL=sqlite:///./fall_detection.db
+      - HOST=0.0.0.0
+      - PORT=8000
+    restart: unless-stopped

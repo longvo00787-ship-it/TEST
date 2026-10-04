@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Backend runtime (created by workflow, do not push)
+backend.log
+backend.err.log
+backend.pid
+
+# Trained models (large files)
+runs/detect/*/weights/*.pt
+models/*.pt
+*.pt
+*.onnx
+*.engine
+
+# Dataset (large)
+datasets/raw/videos/*.mp4
+datasets/raw/videos/*.avi
+datasets/raw/videos/*.mov
+datasets/processed/
+datasets/train/images/
+datasets/val/images/
+datasets/test/images/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/tsconfig.tsbuildinfo
+
+# Generated
+runs/video_outputs/
+runs/evaluation_plots/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test outputs
+test_*.py
+*.bak
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# YOLO weights downloaded by ultralytics
+yolov8*.pt
+yolo11*.pt
