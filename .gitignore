@@ -1,0 +1,5 @@
+# Runtime artifacts created when starting backend in workspace root
+backend.log
+backend.err.log
+backend.pid
+fall_detection.db
